@@ -30,7 +30,6 @@ var fs = require('fs'),
     HTMLFILE_DEFAULT = "index.html",
     CHECKSFILE_DEFAULT = "checks.json";
 
-// var URLFILE_DEFAULT = "http://secure-everglades-4975.herokuapp.com";
 
 var assertFileExists = function (infile) {
     var instr = infile.toString();
@@ -40,8 +39,6 @@ var assertFileExists = function (infile) {
     }
     return instr;
 };
-
-
 
 var cheerioHtmlFile = function (htmlfile) {
     return cheerio.load(fs.readFileSync(htmlfile));
